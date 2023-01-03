@@ -131,9 +131,11 @@ body{
     background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/main/background.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1440px 603px, auto;
-    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    margin: auto;
 }
 .main-section{
     padding-top: 192px;
@@ -179,8 +181,7 @@ body{
     display: flex;
     gap: 24px;
 }
-.skills-link{
-    width: 264px;
+.skills-icons{
     height: 112px;
     background: var(--color-cloud);
     border-radius: 4px;
@@ -267,7 +268,6 @@ body{
     display: flex;
     gap: 24px;
     justify-content: center;
-    align-items: center;
 }
 .team-icons-link{
     width: 40px;
@@ -301,8 +301,11 @@ body{
     gap: 24px;
 }
 
+.customers-user{
+    width: calc((100%-120px)/6);
+}
+
 .customers-icons-link{
-    width: 168px;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -415,12 +418,16 @@ body{
 }
 .project{
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     width: calc((100% - 48px) / 3);
 }
 
-.project:hover,
-.project:focus{
+.project-link{
+    display: inline-block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-link:hover,
+.project-link:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);;
