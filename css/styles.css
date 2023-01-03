@@ -434,9 +434,9 @@ body{
 }
 .about-project{
     padding: 32px 16px;
-    border-left-width: 0.5px solid #F4F4FD;
-    border-right-width: 0.5px solid #F4F4FD;
-    border-bottom-width: 0.5px solid #F4F4FD;
+    border-left: 0.5px solid #F4F4FD;
+    border-right: 0.5px solid #F4F4FD;
+    border-bottom: 0.5px solid #F4F4FD;
 }
 .portfolio-image{
     width: 100%;
